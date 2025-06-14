@@ -1,0 +1,16 @@
+<svg width="220" height="40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background rectangle with rounded corners -->
+  <rect x="0" y="0" width="220" height="40" rx="6" ry="6" fill="#4361ee" />
+  
+  <!-- Logo circle -->
+  <circle cx="20" cy="20" r="15" fill="#ffffff" />
+  
+  <!-- SBC letters in circle -->
+  <text x="20" y="24" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#4361ee">SBC</text>
+  
+  <!-- Express text -->
+  <text x="122" y="25" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#ffffff">EXPRESS</text>
+  
+  <!-- Tagline -->
+  <text x="122" y="35" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#ffffff">Your Trusted Brand</text>
+</svg> 

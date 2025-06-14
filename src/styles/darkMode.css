@@ -1,0 +1,271 @@
+/* Dark Mode Variables */
+:root {
+  /* Light Mode (Default) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --border-color: #dee2e6;
+  --card-bg: #ffffff;
+  --card-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --hero-overlay: rgba(0, 0, 0, 0.5);
+  --btn-primary-bg: #007bff;
+  --btn-primary-text: #ffffff;
+  --btn-outline-bg: transparent;
+  --btn-outline-text: #007bff;
+  --btn-outline-border: #007bff;
+  --alert-bg: #f8d7da;
+  --alert-text: #721c24;
+  --badge-bg: #dc3545;
+  --badge-text: #ffffff;
+  --discount-text: #dc3545;
+  --hover-transition: all 0.3s ease;
+  --stat-card-accent: #007bff;
+  --section-title-underline: #007bff;
+  --toggle-bg: #f8f9fa;
+  --toggle-color: #212529;
+  --toggle-border: #dee2e6;
+  --toggle-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --bg-primary: #121212;
+  --bg-secondary: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --border-color: #444444;
+  --card-bg: #2a2a2a;
+  --card-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+  --hero-overlay: rgba(0, 0, 0, 0.8);
+  --btn-primary-bg: #4d94ff;
+  --btn-primary-text: #ffffff;
+  --btn-outline-bg: transparent;
+  --btn-outline-text: #4d94ff;
+  --btn-outline-border: #4d94ff;
+  --alert-bg: #350f13;
+  --alert-text: #ffb3b9;
+  --badge-bg: #ff4d4d;
+  --badge-text: #ffffff;
+  --discount-text: #ff6b6b;
+  --hover-transition: all 0.3s ease;
+  --stat-card-accent: #4d94ff;
+  --section-title-underline: #4d94ff;
+  --toggle-bg: #333333;
+  --toggle-color: #ffffff;
+  --toggle-border: #555555;
+  --toggle-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Transition Class */
+.dark-mode-transition * {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dark Mode Toggle Styles */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: var(--toggle-bg);
+  border: 1px solid var(--toggle-border);
+  color: var(--toggle-color);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--toggle-shadow);
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(77, 148, 255, 0.5);
+}
+
+.dark-mode-toggle.dark {
+  background: #333333;
+  color: #ffcc00;
+  border-color: #555555;
+}
+
+.dark-mode-toggle.light {
+  background: #f8f9fa;
+  color: #6c757d;
+  border-color: #dee2e6;
+}
+
+/* Apply Light Mode Styles Explicitly */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card,
+.stat-card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.hero-section {
+  background-color: var(--bg-secondary);
+}
+
+.section-title {
+  color: var(--text-primary);
+}
+
+.section-title:after {
+  background-color: var(--section-title-underline);
+}
+
+.btn-outline {
+  color: var(--btn-outline-text);
+  border-color: var(--btn-outline-border);
+}
+
+.btn-outline:hover {
+  background-color: var(--btn-outline-text);
+  color: var(--btn-primary-text);
+}
+
+.stat-card h3 {
+  color: var(--stat-card-accent);
+}
+
+.stat-card p {
+  color: var(--text-secondary);
+}
+
+/* Common Dark Mode Styles */
+body[data-theme="dark"] {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body[data-theme="dark"] .card,
+body[data-theme="dark"] .stat-card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+body[data-theme="dark"] .hero-section {
+  background-color: var(--bg-secondary);
+}
+
+body[data-theme="dark"] .section-title {
+  color: var(--text-primary);
+}
+
+body[data-theme="dark"] .section-title:after {
+  background-color: var(--section-title-underline);
+}
+
+body[data-theme="dark"] .btn-outline {
+  color: var(--btn-outline-text);
+  border-color: var(--btn-outline-border);
+}
+
+body[data-theme="dark"] .btn-outline:hover {
+  background-color: var(--btn-outline-text);
+  color: var(--btn-primary-text);
+}
+
+/* Alert Styles */
+body[data-theme="dark"] .alert-danger {
+  background-color: var(--alert-bg);
+  color: var(--alert-text);
+  border-color: #5a1a21;
+}
+
+/* Badge Styles */
+body[data-theme="dark"] .badge {
+  background-color: var(--badge-bg);
+  color: var(--badge-text);
+}
+
+/* Product Card Styles */
+body[data-theme="dark"] .product-card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+body[data-theme="dark"] .product-card .product-title {
+  color: var(--text-primary);
+}
+
+body[data-theme="dark"] .product-card .product-price {
+  color: var(--text-primary);
+}
+
+body[data-theme="dark"] .product-card .product-discount {
+  color: var(--discount-text);
+}
+
+body[data-theme="dark"] .product-card .product-category {
+  color: var(--text-secondary);
+}
+
+body[data-theme="dark"] .product-card .product-rating {
+  color: #ffc107; /* Keep gold color for stars */
+}
+
+/* Featured Deal Card Styles */
+body[data-theme="dark"] .featured-deal-card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+body[data-theme="dark"] .featured-deal-card h3 {
+  color: var(--text-primary);
+}
+
+body[data-theme="dark"] .featured-deal-card .original-price {
+  color: var(--text-secondary);
+}
+
+body[data-theme="dark"] .featured-deal-card .discount-price {
+  color: var(--discount-text);
+}
+
+body[data-theme="dark"] .featured-deal-card .timer {
+  color: var(--text-secondary);
+}
+
+/* Button Styles */
+body[data-theme="dark"] .btn-primary {
+  background-color: var(--btn-primary-bg);
+  border-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+body[data-theme="dark"] .btn-primary:hover {
+  background-color: #3a85ff;
+  border-color: #2678ff;
+}
+
+/* Spinner Styles */
+body[data-theme="dark"] .spinner-border {
+  color: var(--btn-primary-bg);
+}
+
+/* Empty State Styles */
+body[data-theme="dark"] .text-center h3 {
+  color: var(--text-primary);
+}
+
+body[data-theme="dark"] .text-center p {
+  color: var(--text-secondary);
+}

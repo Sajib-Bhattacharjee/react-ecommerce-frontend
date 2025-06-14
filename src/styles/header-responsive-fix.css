@@ -1,0 +1,117 @@
+/* Fix for header responsiveness between 992px and 1400px */
+@media (min-width: 992px) and (max-width: 1400px) {
+  /* Adjust nav links spacing */
+  .main-navbar .nav-link {
+    padding: 0.5rem 0.6rem !important;
+    font-size: 0.9rem;
+  }
+
+  /* Make dropdowns more compact */
+  .main-navbar .dropdown-menu {
+    min-width: 200px;
+  }
+
+  /* Adjust search bar width */
+  .search-container {
+    max-width: 220px;
+  }
+
+  /* Make the navbar container more fluid */
+  .main-navbar .container-md {
+    max-width: 95%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  /* Adjust icon spacing */
+  .nav-icon {
+    margin-left: 0.5rem;
+  }
+
+  /* Make auth buttons more compact */
+  .auth-buttons .btn-sm {
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  /* Adjust logo size if needed */
+  .logo {
+    height: 32px !important;
+    width: 32px !important;
+  }
+
+  .logo-text {
+    font-size: 1.1rem;
+  }
+}
+
+/* Specific fix for Dimension Next Hub (1024x600) */
+@media screen and (width: 1024px) and (height: 600px),
+  screen and (width: 600px) and (height: 1024px) {
+  /* More aggressive space saving for this specific resolution */
+  .main-navbar .nav-link {
+    padding: 0.4rem 0.4rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* Reduce dropdown width further */
+  .main-navbar .dropdown-menu {
+    min-width: 180px;
+  }
+
+  /* Shrink search bar */
+  .search-container {
+    max-width: 180px !important;
+  }
+
+  /* Make input text smaller */
+  .search-input {
+    font-size: 0.85rem !important;
+    height: 32px !important;
+  }
+
+  .search-btn {
+    height: 32px !important;
+    width: 32px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* Maximize container width */
+  .main-navbar .container-md {
+    max-width: 100% !important;
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+  }
+
+  /* Reduce icon size and spacing */
+  .nav-icon {
+    margin-left: 0.3rem !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Smaller auth buttons */
+  .auth-buttons .btn-sm {
+    padding: 0.2rem 0.4rem !important;
+    font-size: 0.75rem !important;
+    height: 28px !important;
+  }
+
+  /* Smaller logo */
+  .logo {
+    height: 28px !important;
+    width: 28px !important;
+  }
+
+  .logo-text {
+    font-size: 1rem !important;
+  }
+
+  /* Hide less important elements if needed */
+  .top-bar {
+    padding: 0.25rem 0 !important;
+    font-size: 0.8rem !important;
+  }
+}

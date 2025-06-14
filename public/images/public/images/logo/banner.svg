@@ -1,0 +1,33 @@
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4361ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3a0ca3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background rectangle -->
+  <rect x="0" y="0" width="1200" height="400" fill="url(#grad1)" />
+  
+  <!-- Decorative elements -->
+  <circle cx="200" cy="100" r="80" fill="#ffffff" fill-opacity="0.1" />
+  <circle cx="1000" cy="300" r="120" fill="#ffffff" fill-opacity="0.1" />
+  <circle cx="900" cy="50" r="40" fill="#ffffff" fill-opacity="0.1" />
+  
+  <!-- Main logo circle -->
+  <circle cx="250" cy="200" r="100" fill="#ffffff" />
+  
+  <!-- SBC letters in circle -->
+  <text x="250" y="220" font-family="Arial, sans-serif" font-size="60" font-weight="bold" text-anchor="middle" fill="#4361ee">SBC</text>
+  
+  <!-- Express text -->
+  <text x="600" y="180" font-family="Arial, sans-serif" font-size="80" font-weight="bold" text-anchor="middle" fill="#ffffff">SBC EXPRESS</text>
+  
+  <!-- Tagline -->
+  <text x="600" y="240" font-family="Arial, sans-serif" font-size="30" text-anchor="middle" fill="#ffffff">Your Trusted Brand</text>
+  
+  <!-- Call to action -->
+  <rect x="500" y="280" width="200" height="50" rx="25" ry="25" fill="#ffffff" />
+  <text x="600" y="315" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#4361ee">SHOP NOW</text>
+</svg> 

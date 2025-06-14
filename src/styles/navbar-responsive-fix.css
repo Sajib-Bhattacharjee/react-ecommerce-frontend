@@ -1,0 +1,50 @@
+/* Fix navbar responsiveness for large screens */
+@media screen and (min-width: 1200px) {
+  /* Ensure navbar has enough space */
+  .main-navbar .container-md {
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Proper spacing for nav links */
+  .main-navbar .nav-link {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1400px) {
+  .main-navbar .container-md {
+    max-width: 1320px;
+  }
+
+  /* More breathing room for nav links */
+  .main-navbar .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Fix for specific large screen breakpoints where layout might break */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  /* Optimize search container width */
+  .search-container {
+    max-width: 250px;
+  }
+}
+
+/* Keep existing 1024px fix */
+@media screen and (width: 1024px) {
+  /* Increase container width to fit properly */
+  .main-navbar .container-md {
+    max-width: 100% !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  /* Slightly reduce nav link padding to fit better */
+  .main-navbar .nav-link {
+    padding-left: 0.4rem !important;
+    padding-right: 0.4rem !important;
+  }
+}

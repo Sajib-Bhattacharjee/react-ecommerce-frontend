@@ -1,0 +1,15 @@
+/* Fix for navbar width at 1024px screen size */
+@media screen and (width: 1024px) {
+  /* Increase container width to fit properly */
+  .main-navbar .container-md {
+    max-width: 100% !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  /* Slightly reduce nav link padding to fit better */
+  .main-navbar .nav-link {
+    padding-left: 0.4rem !important;
+    padding-right: 0.4rem !important;
+  }
+}

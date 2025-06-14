@@ -1,0 +1,109 @@
+.about-hero {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  margin-bottom: 40px;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #212529;
+}
+
+.about-hero .lead {
+  font-size: 1.25rem;
+  color: #6c757d;
+}
+
+.about-image-container {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-page h2 {
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 20px;
+}
+
+.about-page p {
+  color: #495057;
+  line-height: 1.7;
+}
+
+.values-section,
+.team-section {
+  border-top: 1px solid #e9ecef;
+}
+
+.value-card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.team-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-image img {
+  transform: scale(1.05);
+}
+
+.team-card .card-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.team-card .card-subtitle {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767.98px) {
+  .about-hero {
+    padding: 60px 0;
+  }
+
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .team-image {
+    height: 200px;
+  }
+}

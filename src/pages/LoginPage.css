@@ -1,0 +1,259 @@
+.login-page {
+  padding: 80px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.dark-theme .login-page {
+  background-color: var(--bg-primary);
+}
+
+.login-card {
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  border: none;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.dark-theme .login-card {
+  background-color: var(--bg-card);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-card .card-body {
+  padding: 2.5rem;
+}
+
+.login-title {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.75rem;
+  transition: color 0.3s ease;
+}
+
+.dark-theme .login-title {
+  color: var(--text-light);
+}
+
+.input-group {
+  margin-bottom: 0.5rem;
+}
+
+.input-group-text {
+  background-color: #f8f9fa;
+  border-right: none;
+  color: #6c757d;
+  width: 45px;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.dark-theme .input-group-text {
+  background-color: var(--bg-input);
+  color: var(--text-muted);
+  border-color: var(--border-color);
+}
+
+.form-control {
+  border-left: none;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.dark-theme .form-control {
+  background-color: var(--bg-input);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+}
+
+.dark-theme .form-control:focus {
+  border-color: var(--primary-color);
+}
+
+.form-control:focus + .input-group-text {
+  border-color: #ced4da;
+}
+
+.dark-theme .form-control:focus + .input-group-text {
+  border-color: var(--primary-color);
+}
+
+.form-label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.dark-theme .form-label {
+  color: var(--text-light);
+}
+
+.btn-primary {
+  padding: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  height: 48px;
+  margin-top: 0.5rem;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme .btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.dark-theme .btn-primary:hover {
+  background-color: var(--primary-color-light);
+  border-color: var(--primary-color-light);
+}
+
+.forgot-password {
+  font-size: 0.875rem;
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.dark-theme .forgot-password {
+  color: var(--text-secondary);
+}
+
+.forgot-password:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.dark-theme .forgot-password:hover {
+  color: var(--primary-color-light);
+}
+
+.register-link {
+  font-weight: 600;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.dark-theme .register-link {
+  color: var(--primary-color-light);
+}
+
+.dark-theme .register-link:hover {
+  color: var(--primary-color);
+}
+
+.demo-credentials {
+  background-color: #e8f4ff;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 0.875rem;
+  color: #0056b3;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.dark-theme .demo-credentials {
+  background-color: rgba(13, 110, 253, 0.2);
+  color: var(--primary-color-light);
+}
+
+.form-check {
+  margin-top: 0.75rem;
+}
+
+.dark-theme .form-check-label {
+  color: var(--text-secondary);
+}
+
+.dark-theme .text-muted {
+  color: var(--text-secondary) !important;
+}
+
+.alert {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.dark-theme .alert-danger {
+  background-color: rgba(220, 53, 69, 0.2);
+  color: #f8d7da;
+  border-color: rgba(220, 53, 69, 0.3);
+}
+
+/* Adjust spacing for form groups */
+.login-card .form-group {
+  margin-bottom: 1.25rem;
+}
+
+.login-card .mb-3 {
+  margin-bottom: 1.25rem !important;
+}
+
+.login-card .mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* Improve alignment of checkbox */
+.login-card .form-check {
+  padding-left: 1.75rem;
+}
+
+.login-card .form-check-input {
+  margin-top: 0.25rem;
+  margin-left: -1.75rem;
+}
+
+@media (max-width: 992px) {
+  .login-card .card-body {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    padding: 60px 0;
+  }
+
+  .login-card .card-body {
+    padding: 1.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-page {
+    padding: 40px 0;
+  }
+
+  .login-card {
+    box-shadow: none;
+    border: 1px solid #eeeeee;
+  }
+
+  .login-card .card-body {
+    padding: 1.5rem;
+  }
+
+  .dark-theme .login-card {
+    border: 1px solid var(--border-color);
+    box-shadow: none;
+  }
+}

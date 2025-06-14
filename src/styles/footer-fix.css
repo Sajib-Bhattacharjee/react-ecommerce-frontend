@@ -1,0 +1,21 @@
+/* Fix for footer padding issues */
+.site-footer {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Remove any potential gaps in the layout */
+.main-content + .site-footer {
+  margin-top: 0 !important;
+}
+
+/* Ensure proper spacing inside footer sections */
+.footer-newsletter {
+  margin-top: 0 !important;
+}
+
+.footer-bottom {
+  margin-bottom: 0 !important;
+}
