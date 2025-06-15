@@ -5,7 +5,7 @@
 # 🛍️ **SBC Express E-commerce Platform** 🛍️
 
 
-#### 🌟 **Live Preview** → [**Ecommerce-Platform**](https://sentenceconstructionbysbc.netlify.app/) 💕
+#### 🌟 **Live Preview** → [**Ecommerce-Platform**](https://sbcexpress.netlify.app/) 💕
 
 🎉 Click to explore the fun and laughter! 😄
 
